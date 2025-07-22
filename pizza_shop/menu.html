@@ -3,28 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Pizza Shop</title>
+  <title>Menu - My Pizza Shop</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #fff8f0; color: #333; margin: 0; padding: 0; }
     header { background-color: tomato; color: white; text-align: center; padding: 2em 1em; font-size: 1.5em; }
     nav { background-color: #ff9966; display: flex; justify-content: center; gap: 2em; padding: 1em; font-size: 1.1em; }
     nav a { color: white; text-decoration: none; transition: color 0.3s; }
     nav a:hover { color: #333; }
-    main { padding: 2em; text-align: center; }
-    main img { margin-top: 1em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); max-width: 100%; height: auto; }
+    section { padding: 2em; text-align: center; }
+    .menu-items { display: flex; justify-content: center; gap: 2em; flex-wrap: wrap; margin-top: 1em; }
+    .menu-item { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 1em; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     footer { background-color: #333; color: white; text-align: center; padding: 1.5em; margin-top: 2em; font-size: 0.9em; }
   </style>
 </head>
 <body>
-  <header><h1>Welcome to My Pizza Shop!</h1></header>
+  <header><h1>Our Menu</h1></header>
   <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <h2>Delicious Pizza Made Fresh!</h2>
-    <p>Try our famous pepperoni pizza and cheesy garlic bread.</p>
-    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?fm=jpg&q=60&w=3000" alt="Pizza" width="300">
-  </main>
-  <footer><p>&copy; 2025 My Pizza Shop</p>
+  <section>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Pepperoni Pizza</h3><p>Loaded with pepperoni and cheese.</p></div>
+      <div class="menu-item"><h3>Veggie Pizza</h3><p>Fresh vegetables on a crispy base.</p></div>
+      <div class="menu-item"><h3>Garlic Bread</h3><p>Toasty and buttery, perfect on the side.</p></div>
+    </div>
+  </section>
+  <footer><p>&copy; 2025 My Pizza Shop</p></footer>
+</body>
+</html>
